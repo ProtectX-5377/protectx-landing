@@ -1,0 +1,46 @@
+---
+const recognitions = [
+  {
+    name: "ISO 27001",
+    description:
+      "Nuestros sistemas de gestión cumplen con la norma internacional para proteger la información crítica de nuestros clientes.",
+    logo: "/assets/logos/iso.png", 
+  },
+  {
+    name: "NFPA (National Fire Protection Association)",
+    description:
+      "Aplicamos lineamientos de la NFPA para detección de incendios, alarmas y sistemas de seguridad electrónica.",
+    logo: "/assets/logos/nfpa.png",
+  },
+  {
+    name: "ASIS International",
+    description:
+      "Somos miembros de la asociación internacional líder en seguridad, adoptando sus mejores prácticas en protección empresarial y residencial.",
+    logo: "/assets/logos/asis.png",
+  },
+];
+---
+<section class="bg-gray-900">
+<section class="w-full max-w-7xl mx-auto px-6 py-12">
+  <h2 class="text-4xl font-bold text-center text-white mb-6">
+    Reconocimientos y Estándares Internacionales
+  </h2>
+  <p class="text-center text-gray-200 max-w-3xl mx-auto mb-12">
+    En <span class="font-semibold">ProtectX</span>, trabajamos
+    bajo los más altos estándares de calidad y seguridad a nivel mundial.
+    Nuestros procesos, productos y servicios cumplen con normativas y
+    certificaciones internacionales que garantizan confianza, eficiencia y
+    protección para nuestros clientes.
+  </p>
+
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    {recognitions.map((item) => (
+      <div class="flex flex-col items-center text-center p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow bg-white">
+        <img src={item.logo} alt={item.name} class="h-16 mb-4 object-contain" />
+        <h3 class="text-lg font-bold text-gray-800 mb-2">{item.name}</h3>
+        <p class="text-sm text-gray-600">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+</section>
