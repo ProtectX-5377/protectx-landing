@@ -1,0 +1,52 @@
+---
+import Button from './Button.astro';
+import Stats from './Stats.astro';
+---
+
+
+<section class="bg-gray-100 ">
+  <section id="home" class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <!-- Texto y botones -->
+    <section class="flex flex-col justify-center">
+      
+      <div class=" pb-6 md:pb-8">
+        <h1 class="text-4xl md:text-5xl text-blue-400 font-bold">CONOCE MAS</h1>
+        <div class="max-w-md mt-2">
+          <h1 class="text-4xl md:text-3xl  font-bold mb-4">Deja atras a los sistemas tradicionales</h1>
+          <p class="text-base md:text-lg text-gray-700 mb-6">
+            Bienvenido a ProtectX, una plataforma de seguridad que te permite gestionar diversos dispositivos de monitoreo dentro del hogar; te garantiza seguridad y celeridad.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row  items-start sm:items-center py-2 gap-4 mt-6">
+          <!-- Botón "Empieza ahora" -->
+          <Button 
+            href="#contacto" 
+            class="bg-black text-white hover:bg-blue-700 w-full sm:w-auto flex items-center justify-center"
+          >
+            <p slot="before" class="px-3">Comenzar</p>
+            <svg slot="after" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icon-tabler-arrow-narrow-right">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </Button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+     
+
+    </section>
+
+    <!-- Imagen -->
+    <section class="flex justify-center items-center py-10 md:py-20">
+      <img src="/assets/security.jpg" alt="Ilustración de seguridad digital" class="w-full h-auto rounded-lg shadow-lg"/>
+    </section>
+    
+  </section>
+</section>

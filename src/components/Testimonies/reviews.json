@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "Review": 5,
+    "Description": "ProtectX ha transformado completamente la seguridad en mi hogar en Lima. Ahora puedo monitorear la entrada principal y las habitaciones de mis hijos en tiempo real, lo que me da tranquilidad día y noche.",
+    "Initials": "AG",
+    "Reviewer": "Ana Gómez",
+    "Rol": "Madre de Familia",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 2,
+    "Review": 4,
+    "Description": "ProtectX me da la confianza de vivir solo en mi departamento en Lima. Me permite controlar quién ingresa al edificio y recibir alertas de movimiento incluso cuando estoy en clases.",
+    "Initials": "CM",
+    "Reviewer": "Carlos Mejía",
+    "Rol": "Estudiante",
+    "CentroDeEstudios": "UPC"
+  },
+  {
+    "id": 3,
+    "Review": 5,
+    "Description": "Con ProtectX puedo organizar la seguridad de toda mi familia en un solo sistema. Desde las cámaras en la sala hasta la alarma en la cochera, todo está bajo control sin complicaciones.",
+    "Initials": "LR",
+    "Reviewer": "Lucía Rojas",
+    "Rol": "Madre de Familia",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 4,
+    "Review": 5,
+    "Description": "Como estudiante que vive solo en un departamento en Lima, ProtectX me permite sentirme protegido. Lo uso a diario para asegurarme de que nadie entre sin autorización mientras estoy en la universidad.",
+    "Initials": "DV",
+    "Reviewer": "Diego Vásquez",
+    "Rol": "Estudiante",
+    "CentroDeEstudios": "PUCP"
+  },
+  {
+    "id": 5,
+    "Review": 4,
+    "Description": "Gracias a ProtectX, como independiente en Lima, puedo dejar mi departamento seguro mientras trabajo fuera. Ya no dependo de vecinos para vigilar, todo lo controlo desde mi celular.",
+    "Initials": "MP",
+    "Reviewer": "María Pérez",
+    "Rol": "Independiente",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 6,
+    "Review": 5,
+    "Description": "ProtectX me ha dado confianza para manejar la seguridad de mi departamento y mi oficina en Lima. Puedo revisar cámaras y recibir alertas de forma rápida y segura desde cualquier lugar.",
+    "Initials": "JE",
+    "Reviewer": "José Espinoza",
+    "Rol": "Independiente",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 7,
+    "Review": 5,
+    "Description": "Lo mejor de ProtectX es que me permite estudiar tranquilo en mi departamento en Lima. Puedo validar desde mi celular que todo esté en orden antes de regresar de la universidad.",
+    "Initials": "SM",
+    "Reviewer": "Sofía Morales",
+    "Rol": "Estudiante",
+    "CentroDeEstudios": "UNMSM"
+  },
+  {
+    "id": 8,
+    "Review": 4,
+    "Description": "Como padre en Lima, ProtectX me da la seguridad de que mis hijos y mi hogar estén protegidos. El sistema de cámaras y alarmas ha simplificado mucho nuestra tranquilidad familiar.",
+    "Initials": "PG",
+    "Reviewer": "Pedro García",
+    "Rol": "Padre de Familia",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 9,
+    "Review": 5,
+    "Description": "Me encanta que ProtectX tenga una interfaz sencilla. Aunque no soy muy tecnológica, puedo usarlo fácilmente para cuidar mi casa y estar tranquila con la seguridad de mis hijos.",
+    "Initials": "EC",
+    "Reviewer": "Elena Castillo",
+    "Rol": "Madre de Familia",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 10,
+    "Review": 4,
+    "Description": "En mi vida universitaria en Lima, ProtectX es clave para vivir solo en mi departamento. Siempre tengo acceso a alertas y monitoreo, lo que me da tranquilidad en mis estudios.",
+    "Initials": "FR",
+    "Reviewer": "Fernando Ruiz",
+    "Rol": "Estudiante",
+    "CentroDeEstudios": "USIL"
+  },
+  {
+    "id": 11,
+    "Review": 5,
+    "Description": "ProtectX ha sido un aliado como profesional independiente en Lima. Puedo asegurar mi departamento y mi espacio de trabajo, con notificaciones inmediatas si algo ocurre.",
+    "Initials": "VC",
+    "Reviewer": "Valeria Córdova",
+    "Rol": "Independiente",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 12,
+    "Review": 5,
+    "Description": "Antes me preocupaba por dejar mi casa sola. Con ProtectX, tengo la seguridad de que todo está en orden. Me siento mucho más organizada y tranquila con la seguridad de mi familia.",
+    "Initials": "MT",
+    "Reviewer": "Marcela Torres",
+    "Rol": "Madre de Familia",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 13,
+    "Review": 4,
+    "Description": "Como estudiante de posgrado que vive solo en Lima, ProtectX me da la confianza de regresar tarde a casa sabiendo que mi departamento está bien protegido y monitoreado.",
+    "Initials": "GG",
+    "Reviewer": "Gabriel Gutiérrez",
+    "Rol": "Estudiante",
+    "CentroDeEstudios": "ESAN"
+  },
+  {
+    "id": 14,
+    "Review": 5,
+    "Description": "ProtectX ha simplificado la seguridad en mi hogar en Lima. Puedo compartir accesos con mis familiares y amigos de forma práctica y confiable.",
+    "Initials": "RC",
+    "Reviewer": "Rosa Contreras",
+    "Rol": "Madre de Familia",
+    "CentroDeEstudios": null
+  },
+  {
+    "id": 15,
+    "Review": 5,
+    "Description": "Me parece una herramienta indispensable para cualquier empresario en Lima. La seguridad de mis oficinas y mi familia está garantizada con un solo sistema.",
+    "Initials": "AM",
+    "Reviewer": "Alberto Medina",
+    "Rol": "Empresario",
+    "CentroDeEstudios": null
+  }
+]

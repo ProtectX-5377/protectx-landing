@@ -1,0 +1,21 @@
+---
+const { href, class: className } = Astro.props;
+
+// Definimos una clase base para todos los botones
+const baseClass = "px-4 py-2  transition rounded-2xl inline-flex items-center font-bold";
+---
+
+<a 
+  href={href} 
+  class={`${baseClass} ${className}`} 
+>
+  <slot name="before" />
+  <slot />
+  <slot name="after" />
+</a>
+
+<style>
+  a:hover {
+    text-decoration: underline;
+    
+  }
