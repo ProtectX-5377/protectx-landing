@@ -1,0 +1,16 @@
+{
+  "home": {
+    "title": "CONOCE MÁS",
+    "subtitle": "Deja atrás a los sistemas tradicionales",
+    "description": "Bienvenido a ProtectX, una plataforma de seguridad que te permite gestionar diversos dispositivos de monitoreo dentro del hogar; te garantiza seguridad y celeridad.",
+    "button": "Comenzar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Beneficios",
+    "recognition": "Reconocimientos",
+    "success": "Casos de éxito",
+    "team": "Equipo",
+    "contact": "Contacto"
+  }
+}
