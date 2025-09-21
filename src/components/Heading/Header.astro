@@ -16,45 +16,62 @@
 
     <!-- Menú de navegación (desktop) -->
     <nav class="hidden md:flex">
-      <ul class="flex gap-8 text-base font-medium text-gray-600">
-        <li><a href="#home" class="hover:text-gray-900">Inicio</a></li>
-        <li><a href="#about" class="hover:text-gray-900">Beneficios</a></li>
-        <li><a href="#recognition" class="hover:text-gray-900">Reconocimientos</a></li>
-        <li><a href="#success" class="hover:text-gray-900">Casos de éxito</a></li>
-        <li><a href="#team" class="hover:text-gray-900">Team</a></li>
-        <li><a href="#contact" class="hover:text-gray-900">Contacto</a></li>
+      <ul id="nav-menu" class="flex gap-8 text-base font-medium text-gray-600">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Beneficios</a></li>
+        <li><a href="#recognition">Reconocimientos</a></li>
+        <li><a href="#success">Casos de éxito</a></li>
+        <li><a href="#team">Equipo</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
 
-    <!-- Botón de menú hamburguesa (mobile) -->
-    <div class="md:hidden">
-      <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </div>
-
+    <!-- Botón de idioma -->
+    <button
+      id="lang-toggle"
+      class="ml-4 px-4 py-1 rounded-full border border-gray-300 bg-white text-gray-700 font-medium hover:bg-gray-100 transition"
+    >
+      ES
+    </button>
   </div>
 
-  <!-- Menú móvil (hidden por defecto) -->
+  <!-- Menú móvil -->
   <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-    <ul class="flex flex-col gap-4 px-6 py-4 text-gray-600 font-medium">
-      <li><a href="#home" class="hover:text-gray-900">Inicio</a></li>
-      <li><a href="#about" class="hover:text-gray-900">Beneficios</a></li>
-      <li><a href="#recognition" class="hover:text-gray-900">Reconocimientos</a></li>
-      <li><a href="#success" class="hover:text-gray-900">Casos de éxito</a></li>
-      <li><a href="#team" class="hover:text-gray-900">Team</a></li>
-      <li><a href="#contact" class="hover:text-gray-900">Contacto</a></li>
+    <ul id="mobile-nav-menu" class="flex flex-col gap-4 px-6 py-4 text-gray-600 font-medium">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Beneficios</a></li>
+      <li><a href="#recognition">Reconocimientos</a></li>
+      <li><a href="#success">Casos de éxito</a></li>
+      <li><a href="#team">Equipo</a></li>
+      <li><a href="#contact">Contacto</a></li>
     </ul>
   </nav>
 
-  <script>
-    const btn = document.getElementById('mobile-menu-button');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
+  <script is:client:load>
+    let currentLang = "es";
+
+    async function loadTranslations(lang) {
+      const res = await fetch(`/i18n/${lang}.json`);
+      const translations = await res.json();
+
+      const keys = ["home", "about", "recognition", "success", "team", "contact"];
+      const navItemsDesktop = document.querySelectorAll("#nav-menu li a");
+      const navItemsMobile = document.querySelectorAll("#mobile-nav-menu li a");
+
+      navItemsDesktop.forEach((el, i) => (el.textContent = translations.nav[keys[i]]));
+      navItemsMobile.forEach((el, i) => (el.textContent = translations.nav[keys[i]]));
+    }
+
+    function toggleLang() {
+      currentLang = currentLang === "es" ? "en" : "es";
+      document.getElementById("lang-toggle").textContent = currentLang.toUpperCase();
+      loadTranslations(currentLang);
+    }
+
+    document.getElementById("lang-toggle").addEventListener("click", toggleLang);
+
+    // inicializar
+    loadTranslations("es");
   </script>
+
 </header>
